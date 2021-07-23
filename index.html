@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Birthday </title>
-</head>
-<body>
-    <main>
-        <form onsubmit="return false">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Birthday</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="modal">
+          <h3>Notice</h3>
+          <p>We are not storing your personal data, not that we value your privacy or anything its just we have no idea about how to use the web storage </p>
+
+      </div>
+    <main> 
+      <form onsubmit="return false">
         <h3>Enter your birth date</h3>
         <input class="date" type="date" required />
         <h3>Enter your lucky number</h3>
-        <input class="lucky-number" type="number" min="1" step="1"/>
-        <button type= "submit">lel</button>
-
-    </form>
-
+        <input class="lucky-number" type="number" min="1" step="1" />
+        <button type="submit">lel</button>
+      </form>
+    <div class="result">
+        <img class="show-img" src="#" alt="image"/>
+        <p id="para">-</p>
+    </div>
     </main>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
