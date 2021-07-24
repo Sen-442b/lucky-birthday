@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <h1>Are You a Lucky Person??</h1>
+      <p>Let's find out</p>
+    </header>
       <div class="modal">
           <h3>Notice</h3>
-          <p>We are not storing your personal data, not that we value your privacy or anything its just we have no idea about how to use the web storage </p>
+          <p>We are <strong> not </strong> storing your personal data, not that we value your privacy or anything its just we have no idea about how to use the web storage </p>
+          <button id="close-btn">Close</button>
 
       </div>
     <main> 
@@ -19,7 +24,7 @@
         <input class="date" type="date" required />
         <h3>Enter your lucky number</h3>
         <input class="lucky-number" type="number" min="1" step="1" />
-        <button type="submit">lel</button>
+        <button id="btn-submit" type="submit"> Show Result</button>
       </form>
     <div class="result">
         <img class="show-img" src="#" alt="image"/>
