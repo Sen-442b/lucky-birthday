@@ -2,53 +2,114 @@
     --primary-color:#FEF2F2;
     --highlight:#FECACA;
 }
-
-
-
+/* 
+*{
+    box-sizing: border-box;
+} */
+html{
+height:100%;
+}
 body{
+    margin:0;
+    font-family:sans-serif;
     display: flex;
+    flex-direction: column;
+    
     justify-content: center;
     align-content: center;
-    flex-direction: column;
+    ;
     align-items:center;
-    text-align:center;
+    text-align:center; 
+    overflow:auto;
     background-color:var(--primary-color);
+    min-height:100%;
+    
 }
 
 header{
     
     background-color:var(--highlight) ;
     padding:17px ;
-    width: 95%;
+    width: 100%;
     box-shadow: 3px 3px 5px 6px #ccc;
-    overflow:hidden;
+
 
 }
 
 main{
     text-align:center;
+    padding: 3rem;
+ 
+    margin: 3rem 0 ;
+    box-shadow:-1px 2px 11px 9px #ccc;
+    
+}
+h3{
+    font-size: 20px;
+    /* text-decoration-color: black;
+    text-decoration: wavy; */
+}
+input{
+    padding:1rem;
+    background-color: rgb(255, 101, 132);
+    color:white;
+    border: none;
+    
+    border-radius: 2px;
 }
 
-
-
-
-
-
+button{
+    display: block;
+    background-color:var(--highlight);
+    padding: 15px;
+    font:inherit;
+    border:none;
+    border-radius: 3px;
+    margin:1rem auto;
+   
+}
+button:hover{
+    box-shadow:  0px 1px 1px 3px #ccc;
+}
+img{
+  
+    transition: all 2s ease-in-out;
+}
+img:hover{
+    opacity: 0.2;
+}
+p{
+    font-size: large;
+}
 
 
 .modal{
     position:fixed;
     width :400px;
    
-    border:2px solid black;
+    border:0.6px solid black;
     padding :1rem;
     text-align:center;
     background-color:white;
-    left: 30%;
+    left: 35%;
     top:-100%;
+    background-color: var(--primary-color);
     transition: all 0.7s ease-in;
+    border-radius: 3px;
+    
     
 
+}
+.modal>h3{
+   padding: 2px;
+    background-color: var(--highlight);
+    border-radius:3px;
+}
+@media only screen and (max-width:767px){
+.modal{
+    width:250px;
+    left:10%;
+}
 }
 .result{
 max-width:500px;
@@ -56,4 +117,25 @@ max-width:500px;
 .show-img{
     max-width:100%;
 }
+.fa{
+    text-decoration:none;
+    color:black;
+    padding: 1rem;
+}
+.fa:hover{
+    color:rgb(255, 101, 132);
+}
+.ftr-links{
+  
+   width: 100%;
+    padding:10px;
 
+    background-color:var(--highlight);
+    margin-top:auto;
+
+}
+
+::placeholder{
+    color:white;
+    opacity: 0.4;
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucky Birthday</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <header>
@@ -14,16 +16,17 @@
     </header>
       <div class="modal">
           <h3>Notice</h3>
-          <p>We are <strong> not </strong> storing your personal data, not that we value your privacy or anything its just we have no idea about how to use the web storage </p>
+          <p>We are <strong> not </strong> storing your personal data</p>
+          <p>not that we value your privacy or anything its just we have no idea about how to use the web storage yet. </p>
           <button id="close-btn">Close</button>
 
       </div>
     <main> 
       <form onsubmit="return false">
-        <h3>Enter your birth date</h3>
+        <h3>Enter your birth-date</h3>
         <input class="date" type="date" required />
         <h3>Enter your lucky number</h3>
-        <input class="lucky-number" type="number" min="1" step="1" />
+        <input class="lucky-number" placeholder="eg:4" type="number" min="1" step="1" />
         <button id="btn-submit" type="submit"> Show Result</button>
       </form>
     <div class="result">
@@ -31,7 +34,13 @@
         <p id="para">-</p>
     </div>
     </main>
-
+<footer class="ftr-links">
+  <p>Let's Connect on 👇</p>
+<a href="https://github.com/Sen-442b" class="fa fa-github fa-3x"></a>
+<a href="https://twitter.com/sen_shubhendu" class="fa fa-twitter fa-3x "></a>
+<a href="https://www.linkedin.com/in/shubhendu-sen-771830156/" class="fa fa-linkedin fa-3x "></a>
+<a href="https://personal-site-shubhendu-sen.netlify.app/" class="fa fa-address-card fa-3x"></a>
+</footer>
     <script src="main.js"></script>
   </body>
 </html>

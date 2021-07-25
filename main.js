@@ -35,11 +35,16 @@ closeBtn.addEventListener("click", () => {
 
 
 function getResultData(sum, luckyNumber) {
+  if(luckyNumber>0){
   if (sum % luckyNumber === 0) {
     showImg.src = "./images/happy_lucky.svg";
     paragraph.innerText = "You have a lucky birthday ";
   } else {
-    showImg.src = "paragraph.innerText";
+    showImg.src = "./images/un_lucky.svg";
     paragraph.innerText = "Your don't have a lucky birthday";
   }
+}else{
+  showImg.src="./images/invalid_input.svg"
+  paragraph.innerText="Invalid input"
+}
 }
