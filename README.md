@@ -1,0 +1,1 @@
+A fun Web App to check whether you have a lucky birthday or not by using a simple yet secret algorithm
