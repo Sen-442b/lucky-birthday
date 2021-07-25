@@ -7,18 +7,20 @@ const paragraph = document.getElementById("para");
 const modal = document.querySelector(".modal");
 const closeBtn = document.getElementById("close-btn");
 
+
 result.style.display = "none";
 submitBtn.addEventListener("click", () => {
   let storeSum = 0;
-  let luckyNumValue = parseInt(luckyNum.value, 10);
+  let luckyNumValue = Number(luckyNum.value);
   result.style.display = "block";
+  const dateArray = date.value.split("-");
 
-  dateArray = date.value.split("-");
 
   dateArray.forEach((element) => {
     let intEle = parseInt(element, 10);
     storeSum = storeSum + intEle;
   });
+  console.log(storeSum)
   getResultData(storeSum, luckyNumValue);
 });
 
@@ -35,7 +37,7 @@ closeBtn.addEventListener("click", () => {
 
 
 function getResultData(sum, luckyNumber) {
-  if(luckyNumber>0){
+  if(luckyNumber>0 && luckyNumber===parseInt(luckyNumber) && isNaN(sum)===false){
   if (sum % luckyNumber === 0) {
     showImg.src = "./images/happy_lucky.svg";
     paragraph.innerText = "You have a lucky birthday ";
