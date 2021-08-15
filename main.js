@@ -7,20 +7,24 @@ const paragraph = document.getElementById("para");
 const modal = document.querySelector(".modal");
 const closeBtn = document.getElementById("close-btn");
 
-
+var dateArrayTwo;
 result.style.display = "none";
 submitBtn.addEventListener("click", () => {
   let storeSum = 0;
   let luckyNumValue = Number(luckyNum.value);
   result.style.display = "block";
-  const dateArray = date.value.split("-");
-
-
-  dateArray.forEach((element) => {
+  const dateArray = date.value.split("-").join("");
+  const dateArrayTwo=dateArray.split("");
+  
+ 
+// console.log(dateArrayTwo)
+// console.log(dateArrayTwo)
+  dateArrayTwo.forEach((element) => {
     let intEle = parseInt(element, 10);
+
     storeSum = storeSum + intEle;
   });
-  console.log(storeSum)
+  // console.log(storeSum)
   getResultData(storeSum, luckyNumValue);
 });
 
