@@ -41,7 +41,7 @@ closeBtn.addEventListener("click", () => {
 
 
 function getResultData(sum, luckyNumber) {
-  if(luckyNumber>0 && luckyNumber===parseInt(luckyNumber) && isNaN(sum)===false){
+  if(luckyNumber>0 && luckyNumber===parseInt(luckyNumber) && isNaN(sum)===false && date.value ){
   if (sum % luckyNumber === 0) {
     showImg.src = "./images/happy_lucky.svg";
     paragraph.innerText = "You have a lucky birthday ";
